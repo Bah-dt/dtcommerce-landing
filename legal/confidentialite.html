@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de Confidentialité — DT Commerce</title>
+  <meta name="description" content="Politique de confidentialité et traitement des données — DT Commerce.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="legal-container">
+  <a href="../index.html" class="legal-back">← Retour à DT Commerce</a>
+
+  <h1>Politique de Confidentialité</h1>
+  <div class="legal-update">Dernière mise à jour : 20 mai 2026</div>
+
+  <p>DT Commerce est une application de gestion commerciale développée par <strong>DT Tech Deals</strong> (Conakry, République de Guinée). La présente politique décrit comment vos données sont collectées, utilisées, stockées et protégées.</p>
+
+  <h2>1. Responsable du traitement</h2>
+  <ul>
+    <li><strong>Éditeur</strong> : DT Tech Deals</li>
+    <li><strong>Contact</strong> : <a href="mailto:dttech.guinee@gmail.com">dttech.guinee@gmail.com</a></li>
+    <li><strong>Application</strong> : DT Commerce (Android, iOS, Windows)</li>
+  </ul>
+
+  <h2>2. Données collectées</h2>
+  <p>DT Commerce fonctionne en <strong>mode local-first</strong>. Aucune donnée n'est transmise à des serveurs distants sans votre activation explicite de la synchronisation cloud.</p>
+
+  <h3>2.1 Données stockées localement (sur votre appareil)</h3>
+  <ul>
+    <li>Informations boutique : nom, adresse, NIF, logo, téléphone</li>
+    <li>Comptes utilisateurs : nom, prénom, rôle, hash PIN (jamais le PIN en clair)</li>
+    <li>Catalogue produits : références, prix, stocks, photos</li>
+    <li>Clients : nom, téléphone, adresse, historique d'achat, crédits</li>
+    <li>Fournisseurs : raison sociale, contact, conditions</li>
+    <li>Ventes &amp; paiements : montants, dates, modes</li>
+    <li>Employés (si module RH activé) : nom, fonction, salaire, pointages</li>
+    <li>Dépenses &amp; comptabilité : catégories, montants, justificatifs</li>
+  </ul>
+
+  <h3>2.2 Données synchronisées (si sync cloud activée)</h3>
+  <p>Les mêmes données ci-dessus sont répliquées chiffrées vers <strong>Supabase</strong> (hébergeur cloud, infrastructure AWS Europe). La synchronisation est <strong>désactivée par défaut</strong>.</p>
+
+  <h3>2.3 Données d'activation de la licence</h3>
+  <p>Pour valider votre clé d'activation, l'application transmet à nos serveurs :</p>
+  <ul>
+    <li>La clé saisie (format DTC-XXXX-XXXX-XXXX-XXXX)</li>
+    <li>Un identifiant matériel anonyme de votre appareil (device ID local)</li>
+    <li>Le nom de la boutique active</li>
+  </ul>
+  <p>Cet identifiant ne permet pas de vous identifier personnellement et sert uniquement à empêcher l'utilisation frauduleuse d'une clé sur plusieurs boutiques.</p>
+
+  <h3>2.4 Données techniques</h3>
+  <ul>
+    <li>Rapports de crash anonymisés (si activés) : envoyés à Sentry pour diagnostic. Pas de PII.</li>
+    <li>Logs d'audit locaux : actions sensibles (login, suppression) stockés sur l'appareil uniquement.</li>
+  </ul>
+
+  <h3>2.5 Données NON collectées</h3>
+  <ul>
+    <li>Aucun tracking publicitaire</li>
+    <li>Aucune empreinte d'appareil ni identifiant publicitaire</li>
+    <li>Aucune localisation GPS</li>
+    <li>Aucun accès aux contacts, SMS ou autres apps</li>
+    <li>Aucune revente à des tiers</li>
+  </ul>
+
+  <h2>3. Finalités du traitement</h2>
+  <ul>
+    <li>Gestion commerciale : tenir la comptabilité, gérer stock, facturer</li>
+    <li>Synchronisation multi-appareils (si activée) : accès depuis plusieurs téléphones/PC</li>
+    <li>Sauvegarde : éviter la perte de données en cas de panne d'appareil</li>
+    <li>Diagnostic technique : corriger bugs via rapports de crash anonymisés</li>
+    <li>Validation de la clé d'activation : empêcher la fraude</li>
+  </ul>
+
+  <h2>4. Base légale</h2>
+  <ul>
+    <li><strong>Exécution du contrat</strong> : fournir le service applicatif</li>
+    <li><strong>Consentement</strong> : pour la synchronisation cloud (opt-in explicite)</li>
+    <li><strong>Intérêt légitime</strong> : diagnostics techniques anonymisés</li>
+  </ul>
+
+  <h2>5. Partage des données</h2>
+  <p>Vos données ne sont <strong>jamais vendues ni cédées</strong> à des tiers. Elles sont uniquement traitées par :</p>
+  <ul>
+    <li><strong>Supabase</strong> (sous-traitant cloud) — si sync activée</li>
+    <li><strong>Sentry</strong> (sous-traitant diagnostic) — uniquement traces techniques anonymisées</li>
+  </ul>
+  <p>DT Tech Deals ne fait pas de publicité et n'utilise pas d'analytique tierce.</p>
+
+  <h2>6. Durée de conservation</h2>
+  <ul>
+    <li>Données locales : tant que l'application est installée. Suppression complète via Réinitialiser l'application.</li>
+    <li>Données cloud (si sync) : conservées tant que la licence est active. Suppression sur demande dans 30 jours.</li>
+    <li>Sauvegardes : 10 dernières sauvegardes locales conservées en rotation.</li>
+    <li>Logs Sentry : 30 jours.</li>
+  </ul>
+
+  <h2>7. Sécurité</h2>
+  <ul>
+    <li><strong>Chiffrement PIN</strong> : SHA-256 avec sel. Le PIN en clair n'est jamais stocké.</li>
+    <li><strong>Stockage sécurisé</strong> : clés de chiffrement dans le keystore matériel (Android Keystore, iOS Keychain).</li>
+    <li><strong>Verrouillage automatique</strong> : retour à l'écran PIN après inactivité.</li>
+    <li><strong>Limitation tentatives PIN</strong> : blocage progressif après échecs répétés.</li>
+    <li><strong>Connexions cloud</strong> : TLS 1.2+, RLS (Row-Level Security) Supabase par boutique.</li>
+  </ul>
+
+  <h2>8. Vos droits</h2>
+  <p>Conformément aux principes RGPD-like (loi guinéenne sur la protection des données) :</p>
+  <ul>
+    <li><strong>Accès</strong> : consulter toutes vos données via l'app</li>
+    <li><strong>Rectification</strong> : modifier toute donnée via les écrans dédiés</li>
+    <li><strong>Effacement</strong> : suppression complète via Réinitialiser l'application ou demande email</li>
+    <li><strong>Portabilité</strong> : export complet via Réglages → Sauvegarde → Exporter</li>
+    <li><strong>Opposition au traitement</strong> : désactiver la sync cloud à tout moment</li>
+  </ul>
+  <p>Pour exercer un droit : <a href="mailto:dttech.guinee@gmail.com">dttech.guinee@gmail.com</a>. Délai de réponse : 30 jours.</p>
+
+  <h2>9. Cookies / Traceurs</h2>
+  <p>DT Commerce est une application native, <strong>n'utilise pas de cookies</strong>. Aucun traceur publicitaire.</p>
+
+  <h2>10. Enfants</h2>
+  <p>DT Commerce est destiné à un usage professionnel. Réservé aux personnes majeures (18 ans).</p>
+
+  <h2>11. Transfert international</h2>
+  <p>Les données synchronisées sont stockées sur les serveurs Supabase (région Europe). Le transfert depuis la Guinée vers l'UE est encadré par les clauses contractuelles types Supabase.</p>
+
+  <h2>12. Modifications</h2>
+  <p>Cette politique peut évoluer. Toute modification substantielle sera notifiée dans l'application et par email aux utilisateurs cloud.</p>
+
+  <h2>13. Réclamation</h2>
+  <p>En cas de désaccord : contacter d'abord <a href="mailto:dttech.guinee@gmail.com">dttech.guinee@gmail.com</a>. À défaut de réponse satisfaisante sous 30 jours, vous pouvez saisir l'autorité de contrôle compétente.</p>
+
+  <div class="legal-footer">
+    © 2026 DT Tech Deals. Tous droits réservés.
+  </div>
+</div>
+
+</body>
+</html>

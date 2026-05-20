@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DT Commerce — Caisse + Gestion Boutique pour Conakry</title>
+  <meta name="description" content="Application de caisse, stock, crédits clients et rapports pour boutiquiers, pharmacies et supérettes en Guinée. Marche sans internet. Essai 7 jours gratuit.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DT Commerce — Caisse complète pour ta boutique">
+  <meta property="og:description" content="Stock, crédits, ventes, rapports. Marche sans internet. Pour Android + Windows.">
+  <meta property="og:image" content="https://bah-dt.github.io/dtcommerce-landing/screenshots/og.png">
+  <meta property="og:url" content="https://bah-dt.github.io/dtcommerce-landing/">
+  <meta property="og:type" content="website">
+
+  <!-- Facebook Pixel (à remplir avec le vrai ID) -->
+  <!-- <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID_HERE');
+    fbq('track', 'PageView');
+  </script> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-name">DT Commerce</span>
+    </a>
+    <a href="#download" class="btn btn-ghost">Télécharger</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <span class="badge">🇬🇳 Fait pour les boutiques de Conakry</span>
+      <h1>Ta caisse complète,<br><span class="accent">dans ton téléphone.</span></h1>
+      <p class="lead">
+        Ventes, stock, crédits clients, rapports. Marche <strong>sans internet</strong>.
+        Imprime tickets Bluetooth. Synchronise sur tes appareils quand tu veux.
+      </p>
+      <div class="cta-row">
+        <a href="#download" class="btn btn-primary">📱 Télécharger gratuit (7 jours)</a>
+        <a href="#tarif" class="btn btn-secondary">Voir le tarif</a>
+      </div>
+      <div class="trust">
+        <span>✓ Aucune carte bancaire</span>
+        <span>✓ Activation par WhatsApp</span>
+        <span>✓ Support en français</span>
+      </div>
+    </div>
+    <div class="hero-mock">
+      <div class="phone-frame">
+        <img src="screenshots/dashboard.png" alt="Dashboard DT Commerce" onerror="this.style.display='none'">
+        <div class="phone-fallback">
+          <div class="fake-card"></div>
+          <div class="fake-card small"></div>
+          <div class="fake-card small"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <h2 class="section-title">Tout ce qu'il te faut pour gérer ta boutique</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🛒</div>
+        <h3>Point de vente</h3>
+        <p>Encaisse rapidement, scanne les codes-barres, accepte espèces, mobile money, crédit.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📦</div>
+        <h3>Stock + alertes</h3>
+        <p>Suivi quantités en temps réel, alertes ruptures, dates de péremption pour produits sensibles.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💳</div>
+        <h3>Crédits clients</h3>
+        <p>Enregistre les dettes, échéances, remboursements partiels. Plus jamais de cahier perdu.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📊</div>
+        <h3>Rapports clairs</h3>
+        <p>Chiffre d'affaires, marges, top produits, P&amp;L, TVA. En 2 tapes.</p>
+      </div>
+      <div class="card">
+        <div class="icon">👥</div>
+        <h3>Employés + permissions</h3>
+        <p>Plusieurs utilisateurs, rôles, pointage, paie, congés. Pour les boutiques structurées.</p>
+      </div>
+      <div class="card">
+        <div class="icon">☁️</div>
+        <h3>Sauvegarde cloud</h3>
+        <p>Synchro optionnelle. Change de téléphone, retrouve tout. Sans rien perdre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tarif" class="pricing">
+  <div class="container">
+    <h2 class="section-title">Un seul paiement. Pour toujours.</h2>
+    <div class="price-card">
+      <div class="price-badge">Licence à vie</div>
+      <div class="price-amount">
+        <span class="price-value">300 000</span>
+        <span class="price-currency">GNF</span>
+      </div>
+      <div class="price-note">Paiement unique — aucun abonnement</div>
+      <ul class="price-features">
+        <li>✓ Toutes les fonctionnalités sans limite</li>
+        <li>✓ Mises à jour gratuites à vie</li>
+        <li>✓ Support WhatsApp en français</li>
+        <li>✓ Sauvegarde cloud incluse</li>
+        <li>✓ Active sur 1 boutique</li>
+      </ul>
+      <a href="https://wa.me/224625437636?text=Bonjour%2C%20je%20souhaite%20acheter%20une%20cl%C3%A9%20DT%20Commerce%20pour%20ma%20boutique." class="btn btn-primary btn-large">
+        💬 Acheter par WhatsApp
+      </a>
+      <p class="price-trial">Tu peux d'abord essayer 7 jours gratuit, sans engagement.</p>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="download">
+  <div class="container">
+    <h2 class="section-title">Télécharger DT Commerce</h2>
+    <div class="dl-grid">
+      <div class="dl-card">
+        <div class="dl-icon">📱</div>
+        <h3>Android</h3>
+        <p>Pour téléphones Tecno, Itel, Infinix, Samsung… Sideload simple.</p>
+        <a href="https://github.com/Bah-dt/DTCommerce/releases/latest/download/dt-commerce.apk" class="btn btn-primary">Télécharger APK</a>
+        <details class="how-install">
+          <summary>Comment installer ?</summary>
+          <ol>
+            <li>Télécharge le fichier APK</li>
+            <li>Ouvre-le depuis ton téléphone</li>
+            <li>Autorise "Sources inconnues" si demandé</li>
+            <li>Installe et lance l'app</li>
+          </ol>
+        </details>
+      </div>
+      <div class="dl-card">
+        <div class="dl-icon">💻</div>
+        <h3>Windows</h3>
+        <p>PC de caisse, pharmacie, supérette. Multi-employés.</p>
+        <a href="https://github.com/Bah-dt/DTCommerce/releases/latest/download/dt-commerce-setup.exe" class="btn btn-primary">Télécharger Windows</a>
+        <details class="how-install">
+          <summary>Comment installer ?</summary>
+          <ol>
+            <li>Télécharge le fichier .exe</li>
+            <li>Double-clique pour lancer l'installeur</li>
+            <li>Si SmartScreen avertit, clique "Informations complémentaires" → "Exécuter quand même"</li>
+            <li>Suis l'assistant d'installation</li>
+          </ol>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="support">
+  <div class="container support-inner">
+    <h2>Une question ? On répond.</h2>
+    <p>Support WhatsApp en français, 7j/7.</p>
+    <a href="https://wa.me/224625437636?text=Bonjour%2C%20j%27ai%20besoin%20d%27aide%20avec%20DT%20Commerce." class="btn btn-primary btn-large">
+      💬 Contacter sur WhatsApp
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <strong>DT Commerce</strong>
+      <span>par DT Tech Deals</span>
+    </div>
+    <nav class="footer-links">
+      <a href="legal/cgu.html">CGU</a>
+      <a href="legal/confidentialite.html">Confidentialité</a>
+      <a href="https://wa.me/224625437636">WhatsApp</a>
+      <a href="mailto:dttech.guinee@gmail.com">Email</a>
+    </nav>
+    <div class="footer-copy">© 2026 DT Tech Deals · Conakry, Guinée</div>
+  </div>
+</footer>
+
+</body>
+</html>
