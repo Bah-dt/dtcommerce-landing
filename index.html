@@ -13,16 +13,19 @@
   <meta property="og:url" content="https://bah-dt.github.io/dtcommerce-landing/">
   <meta property="og:type" content="website">
 
-  <!-- Facebook Pixel (à remplir avec le vrai ID) -->
-  <!-- <script>
+  <!-- Meta Pixel : dt-commerce-landing (Dt Busness BM) -->
+  <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'PIXEL_ID_HERE');
+    fbq('init', '968218222582914');
     fbq('track', 'PageView');
-  </script> -->
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=968218222582914&ev=PageView&noscript=1"/></noscript>
+  <!-- End Meta Pixel -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -129,7 +132,7 @@
         <li>✓ Sauvegarde cloud incluse</li>
         <li>✓ Active sur 1 boutique</li>
       </ul>
-      <a href="https://wa.me/224625437636?text=Bonjour%2C%20je%20souhaite%20acheter%20une%20cl%C3%A9%20DT%20Commerce%20pour%20ma%20boutique." class="btn btn-primary btn-large">
+      <a href="https://wa.me/224625437636?text=Bonjour%2C%20je%20souhaite%20acheter%20une%20cl%C3%A9%20DT%20Commerce%20pour%20ma%20boutique." class="btn btn-primary btn-large" onclick="fbq && fbq('track','Lead',{content_name:'whatsapp-purchase'});">
         💬 Acheter par WhatsApp
       </a>
       <p class="price-trial">Tu peux d'abord essayer 7 jours gratuit, sans engagement.</p>
@@ -145,7 +148,7 @@
         <div class="dl-icon">📱</div>
         <h3>Android</h3>
         <p>Pour téléphones Tecno, Itel, Infinix, Samsung… Sideload simple.</p>
-        <a href="https://github.com/Bah-dt/DTCommerce/releases/latest/download/dt-commerce.apk" class="btn btn-primary">Télécharger APK</a>
+        <a href="https://github.com/Bah-dt/DTCommerce/releases/latest/download/dt-commerce.apk" class="btn btn-primary" onclick="fbq && fbq('track','Download',{content_name:'android-apk'});">Télécharger APK</a>
         <details class="how-install">
           <summary>Comment installer ?</summary>
           <ol>
@@ -160,7 +163,7 @@
         <div class="dl-icon">💻</div>
         <h3>Windows</h3>
         <p>PC de caisse, pharmacie, supérette. Multi-employés.</p>
-        <a href="https://github.com/Bah-dt/DTCommerce/releases/latest/download/dt-commerce-windows-portable.zip" class="btn btn-primary">Télécharger Windows</a>
+        <a href="https://github.com/Bah-dt/DTCommerce/releases/latest/download/dt-commerce-windows-portable.zip" class="btn btn-primary" onclick="fbq && fbq('track','Download',{content_name:'windows-zip'});">Télécharger Windows</a>
         <details class="how-install">
           <summary>Comment installer ?</summary>
           <ol>
