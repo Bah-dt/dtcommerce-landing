@@ -113,15 +113,13 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--ink);
 }
 
-.brand-mark {
-  width: 32px;
-  height: 32px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
-  color: var(--on-primary);
-  border-radius: 9px;
-  box-shadow: var(--shadow-primary);
+.brand-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 4px 12px -2px rgba(181, 86, 60, 0.25);
 }
 
 .nav-links {
