@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DT Commerce — Caisse + Gestion Boutique pour Conakry</title>
-  <meta name="description" content="Application de caisse, stock, crédits clients et rapports pour boutiquiers, pharmacies et supérettes en Guinée. Marche sans internet. Essai 7 jours gratuit.">
+  <title>DT Commerce — La caisse pensée pour les boutiques de Conakry</title>
+  <meta name="description" content="Caisse, stock, crédits, rapports. Marche sans internet. Pour boutiquiers, pharmacies et supérettes en Guinée. Essai 7 jours gratuit, licence 300 000 GNF à vie.">
 
   <!-- Open Graph -->
   <meta property="og:title" content="DT Commerce — Caisse complète pour ta boutique">
@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://bah-dt.github.io/dtcommerce-landing/">
   <meta property="og:type" content="website">
 
-  <!-- Meta Pixel : dt-commerce-landing (Dt Busness BM) -->
+  <!-- Meta Pixel -->
   <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -25,153 +25,371 @@
   </script>
   <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=968218222582914&ev=PageView&noscript=1"/></noscript>
-  <!-- End Meta Pixel -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700;9..144,900&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Decorative grain overlay -->
+<div class="grain" aria-hidden="true"></div>
+
 <header class="nav">
   <div class="container nav-inner">
     <a href="#" class="brand">
-      <span class="brand-dot"></span>
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+          <path d="M4 4 L12 4 L20 12 L12 20 L4 20 Z" stroke="currentColor" stroke-width="2.5"/>
+          <circle cx="12" cy="12" r="3" fill="currentColor"/>
+        </svg>
+      </span>
       <span class="brand-name">DT Commerce</span>
     </a>
-    <a href="#download" class="btn btn-ghost">Télécharger</a>
+    <nav class="nav-links">
+      <a href="#fonctionnalites">Fonctionnalités</a>
+      <a href="#tarif">Tarif</a>
+      <a href="#download" class="btn btn-ghost">Télécharger</a>
+    </nav>
   </div>
 </header>
 
+<!-- ============ HERO ============ -->
 <section class="hero">
   <div class="container hero-inner">
     <div class="hero-copy">
-      <span class="badge">🇬🇳 Fait pour les boutiques de Conakry</span>
-      <h1>Ta caisse complète,<br><span class="accent">dans ton téléphone.</span></h1>
+      <span class="eyebrow">
+        <span class="eyebrow-dot"></span>
+        Fait à Conakry &nbsp;·&nbsp; Pensé pour la Guinée
+      </span>
+      <h1>
+        Ta boutique,<br>
+        <span class="display-italic">enfin</span> sous contrôle.
+      </h1>
       <p class="lead">
-        Ventes, stock, crédits clients, rapports. Marche <strong>sans internet</strong>.
-        Imprime tickets Bluetooth. Synchronise sur tes appareils quand tu veux.
+        DT Commerce remplace les cahiers, les calculettes et les approximations.
+        Ventes, stocks, crédits clients, rapports — tout dans une seule app.
+        <strong>Marche sans internet.</strong>
       </p>
       <div class="cta-row">
-        <a href="#download" class="btn btn-primary">📱 Télécharger gratuit (7 jours)</a>
-        <a href="#tarif" class="btn btn-secondary">Voir le tarif</a>
+        <a href="#download" class="btn btn-primary">
+          Télécharger gratuit
+          <span class="btn-arrow">→</span>
+        </a>
+        <a href="#fonctionnalites" class="btn btn-secondary">Voir les fonctionnalités</a>
       </div>
       <div class="trust">
-        <span>✓ Aucune carte bancaire</span>
-        <span>✓ Activation par WhatsApp</span>
-        <span>✓ Support en français</span>
+        <span><b>7 jours</b> d'essai sans engagement</span>
+        <span>·</span>
+        <span>Activation par <b>WhatsApp</b></span>
+        <span>·</span>
+        <span>Support en <b>français</b></span>
       </div>
     </div>
     <div class="hero-mock">
-      <div class="phone-frame">
-        <img src="screenshots/dashboard.png" alt="Dashboard DT Commerce" onerror="this.style.display='none'">
-        <div class="phone-fallback">
-          <div class="fake-card"></div>
-          <div class="fake-card small"></div>
-          <div class="fake-card small"></div>
+      <div class="phone-stack">
+        <div class="phone-frame phone-back">
+          <img src="screenshots/pos.png" alt="Écran POS">
         </div>
+        <div class="phone-frame phone-front">
+          <img src="screenshots/dashboard.png" alt="Dashboard DT Commerce">
+        </div>
+        <div class="halo"></div>
       </div>
+    </div>
+  </div>
+  <div class="container marquee-wrap">
+    <div class="marquee">
+      <span>Boutique de quartier</span><span class="dot">◆</span>
+      <span>Pharmacie</span><span class="dot">◆</span>
+      <span>Supérette</span><span class="dot">◆</span>
+      <span>Quincaillerie</span><span class="dot">◆</span>
+      <span>Cosmétiques</span><span class="dot">◆</span>
+      <span>Vente en gros</span><span class="dot">◆</span>
+      <span>Téléphonie</span><span class="dot">◆</span>
+      <span>Mode &amp; textiles</span><span class="dot">◆</span>
     </div>
   </div>
 </section>
 
-<section class="features">
+<!-- ============ SECTION INTRO ============ -->
+<section class="intro" id="fonctionnalites">
+  <div class="container intro-inner">
+    <p class="kicker">Cinq piliers, une app.</p>
+    <h2 class="big-heading">
+      Tout ce dont une boutique a vraiment besoin —<br>
+      <span class="muted-italic">rien de plus, rien de moins.</span>
+    </h2>
+  </div>
+</section>
+
+<!-- ============ FEATURE 01 — POS ============ -->
+<section class="feature feature-left">
+  <div class="container feature-inner">
+    <div class="feature-media">
+      <div class="phone-frame">
+        <img src="screenshots/pos.png" alt="Écran point de vente DT Commerce">
+      </div>
+      <div class="floating-tag tag-tl">⚡ &lt; 3 sec / vente</div>
+      <div class="floating-tag tag-br">📷 Code-barres</div>
+    </div>
+    <div class="feature-text">
+      <span class="chapter">01 / Point de vente</span>
+      <h3 class="feature-title">Encaisse en <span class="display-italic">trois secondes</span>.</h3>
+      <p class="feature-lead">
+        Scanne, ajoute, valide. Le mode caisse est pensé pour les mains rapides :
+        gros boutons, recherche instantanée, multi-paiements en un tap.
+      </p>
+      <ul class="bullets">
+        <li><b>Scanner code-barres</b> avec la caméra du téléphone</li>
+        <li><b>Espèces, mobile money, crédit</b> — combinables sur une vente</li>
+        <li><b>Tickets Bluetooth</b> imprimables sur n'importe quelle thermique 58/80mm</li>
+        <li><b>Remises ponctuelles</b> par produit ou sur le total</li>
+        <li><b>Mode hors-ligne intégral</b> — zéro coupure pendant les pannes réseau</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURE 02 — STOCK ============ -->
+<section class="feature feature-right">
+  <div class="container feature-inner">
+    <div class="feature-text">
+      <span class="chapter">02 / Stock &amp; inventaire</span>
+      <h3 class="feature-title">Plus jamais une rupture <span class="display-italic">surprise</span>.</h3>
+      <p class="feature-lead">
+        Le stock se met à jour à chaque vente, chaque achat, chaque retour.
+        L'app te prévient avant que ça devienne un problème.
+      </p>
+      <ul class="bullets">
+        <li><b>Alertes rupture</b> dès qu'un produit passe sous son seuil</li>
+        <li><b>Dates de péremption</b> avec compte à rebours (pharmacie, alimentaire)</li>
+        <li><b>Lots et variantes</b> — tailles, couleurs, fournisseurs</li>
+        <li><b>Inventaire physique</b> en quelques minutes, ajustement automatique</li>
+        <li><b>Multi-emplacements</b> — boutique, dépôt, vitrine</li>
+      </ul>
+    </div>
+    <div class="feature-media">
+      <div class="phone-frame">
+        <img src="screenshots/stock.png" alt="Écran stock DT Commerce">
+      </div>
+      <div class="floating-tag tag-tr">⚠ Alertes auto</div>
+      <div class="floating-tag tag-bl">📅 Péremption</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURE 03 — CRÉDITS ============ -->
+<section class="feature feature-left">
+  <div class="container feature-inner">
+    <div class="feature-media">
+      <div class="phone-frame">
+        <img src="screenshots/credits.png" alt="Écran crédits clients DT Commerce">
+      </div>
+      <div class="floating-tag tag-tl">📒 Fini le cahier</div>
+      <div class="floating-tag tag-br">📲 SMS rappel</div>
+    </div>
+    <div class="feature-text">
+      <span class="chapter">03 / Crédits clients</span>
+      <h3 class="feature-title">Le cahier de dettes, <span class="display-italic">en mieux</span>.</h3>
+      <p class="feature-lead">
+        Chaque crédit est lié à un client, avec son solde à jour en temps réel.
+        Plus de pages déchirées, plus de "il avait dit qu'il paierait quand ?"
+      </p>
+      <ul class="bullets">
+        <li><b>Historique complet</b> par client : ventes, remboursements, solde</li>
+        <li><b>Remboursements partiels</b> — accepte 50 000 sur 200 000 sans embrouille</li>
+        <li><b>Échéances</b> avec rappels visuels quand la date approche</li>
+        <li><b>Plafond de crédit</b> par client, blocage automatique au dépassement</li>
+        <li><b>Export PDF</b> pour les clients qui veulent leur relevé</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURE 04 — RAPPORTS ============ -->
+<section class="feature feature-right">
+  <div class="container feature-inner">
+    <div class="feature-text">
+      <span class="chapter">04 / Rapports &amp; analyses</span>
+      <h3 class="feature-title">Sache <span class="display-italic">vraiment</span> ce qui rapporte.</h3>
+      <p class="feature-lead">
+        Chiffre d'affaires, marges, top produits, dépenses — tout est calculé pour toi.
+        Tu prends les bonnes décisions parce que tu vois les bons chiffres.
+      </p>
+      <ul class="bullets">
+        <li><b>CA jour / semaine / mois</b> en deux taps</li>
+        <li><b>Top 10 produits</b> par volume ET par marge (souvent pas les mêmes)</li>
+        <li><b>Bilan profit &amp; perte</b> automatique, prêt pour ton comptable</li>
+        <li><b>TVA</b> calculée et déductible</li>
+        <li><b>Comparaison périodes</b> — ce mois vs. le précédent</li>
+      </ul>
+    </div>
+    <div class="feature-media">
+      <div class="phone-frame">
+        <img src="screenshots/rapports.png" alt="Écran rapports DT Commerce">
+      </div>
+      <div class="floating-tag tag-tr">📊 P&amp;L auto</div>
+      <div class="floating-tag tag-bl">📈 Top produits</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURE 05 — SETUP & ACTIVATION ============ -->
+<section class="feature feature-left">
+  <div class="container feature-inner">
+    <div class="feature-media">
+      <div class="phone-frame">
+        <img src="screenshots/setup.png" alt="Setup wizard DT Commerce">
+      </div>
+      <div class="floating-tag tag-tl">⏱ 2 minutes</div>
+      <div class="floating-tag tag-br">🔑 1 clé à vie</div>
+    </div>
+    <div class="feature-text">
+      <span class="chapter">05 / Mise en route &amp; licence</span>
+      <h3 class="feature-title">Tu installes, tu démarres. <span class="display-italic">C'est tout.</span></h3>
+      <p class="feature-lead">
+        Pas de compte à créer, pas de carte bancaire à donner, pas d'abonnement à oublier.
+        Sept jours d'essai, puis une licence à vie si l'app te convient.
+      </p>
+      <ul class="bullets">
+        <li><b>Assistant de configuration</b> en 4 écrans : boutique, profil, devise, OK</li>
+        <li><b>Activation par WhatsApp</b> avec une clé à 16 caractères</li>
+        <li><b>Une clé = une boutique</b>, transférable si tu changes de téléphone</li>
+        <li><b>Sauvegarde cloud optionnelle</b> — change d'appareil, retrouve tout</li>
+        <li><b>Synchronisation multi-appareils</b> sur la même boutique</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXTRA FEATURES STRIP ============ -->
+<section class="extras">
   <div class="container">
-    <h2 class="section-title">Tout ce qu'il te faut pour gérer ta boutique</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="icon">🛒</div>
-        <h3>Point de vente</h3>
-        <p>Encaisse rapidement, scanne les codes-barres, accepte espèces, mobile money, crédit.</p>
+    <p class="kicker centered">Et aussi —</p>
+    <div class="extras-grid">
+      <div class="extra"><span class="extra-icon">👥</span><h4>Employés &amp; permissions</h4><p>Plusieurs utilisateurs, rôles, pointage, paie. Pour les boutiques structurées.</p></div>
+      <div class="extra"><span class="extra-icon">🔄</span><h4>Retours &amp; échanges</h4><p>Traite un retour en deux taps, le stock se remet à jour automatiquement.</p></div>
+      <div class="extra"><span class="extra-icon">⭐</span><h4>Programme fidélité</h4><p>Points cumulés, paliers, récompenses — fais revenir tes meilleurs clients.</p></div>
+      <div class="extra"><span class="extra-icon">🚚</span><h4>Achats &amp; fournisseurs</h4><p>Bons de commande, réception, dettes fournisseurs. Tout connecté au stock.</p></div>
+      <div class="extra"><span class="extra-icon">💸</span><h4>Dépenses</h4><p>Loyer, électricité, transport — catégorise pour voir où part vraiment l'argent.</p></div>
+      <div class="extra"><span class="extra-icon">🧠</span><h4>Insights IA</h4><p>Prévisions de stock, saisonnalité, recommandations de réassort.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how">
+  <div class="container">
+    <p class="kicker centered">Comment ça marche</p>
+    <h2 class="big-heading centered">Trois étapes. <span class="display-italic">Pas plus.</span></h2>
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">01</span>
+        <h4>Télécharge</h4>
+        <p>APK Android ou exécutable Windows, directement depuis cette page. Aucun store, aucune validation.</p>
       </div>
-      <div class="card">
-        <div class="icon">📦</div>
-        <h3>Stock + alertes</h3>
-        <p>Suivi quantités en temps réel, alertes ruptures, dates de péremption pour produits sensibles.</p>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <h4>Configure</h4>
+        <p>Nom de boutique, PIN, devise. L'essai gratuit de 7 jours s'active automatiquement.</p>
       </div>
-      <div class="card">
-        <div class="icon">💳</div>
-        <h3>Crédits clients</h3>
-        <p>Enregistre les dettes, échéances, remboursements partiels. Plus jamais de cahier perdu.</p>
-      </div>
-      <div class="card">
-        <div class="icon">📊</div>
-        <h3>Rapports clairs</h3>
-        <p>Chiffre d'affaires, marges, top produits, P&amp;L, TVA. En 2 tapes.</p>
-      </div>
-      <div class="card">
-        <div class="icon">👥</div>
-        <h3>Employés + permissions</h3>
-        <p>Plusieurs utilisateurs, rôles, pointage, paie, congés. Pour les boutiques structurées.</p>
-      </div>
-      <div class="card">
-        <div class="icon">☁️</div>
-        <h3>Sauvegarde cloud</h3>
-        <p>Synchro optionnelle. Change de téléphone, retrouve tout. Sans rien perdre.</p>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <h4>Active la clé</h4>
+        <p>Quand tu es convaincu, on t'envoie ta clé à vie par WhatsApp. Tu la colles, c'est fini.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ============ PRICING ============ -->
 <section id="tarif" class="pricing">
   <div class="container">
-    <h2 class="section-title">Un seul paiement. Pour toujours.</h2>
-    <div class="price-card">
-      <div class="price-badge">Licence à vie</div>
-      <div class="price-amount">
-        <span class="price-value">300 000</span>
-        <span class="price-currency">GNF</span>
+    <p class="kicker centered">Tarif</p>
+    <h2 class="big-heading centered">Un seul paiement. <span class="display-italic">Pour toujours.</span></h2>
+    <div class="price-grid">
+      <div class="price-card price-trial-card">
+        <span class="price-tag">Essai</span>
+        <div class="price-headline">
+          <span class="price-big">0</span>
+          <span class="price-unit">GNF</span>
+        </div>
+        <p class="price-sub">7 jours · aucune carte demandée</p>
+        <ul class="price-list">
+          <li>✓ Accès complet à toutes les fonctionnalités</li>
+          <li>✓ Aucune limite de produits, ventes, clients</li>
+          <li>✓ Bascule vers la licence à vie quand tu veux</li>
+        </ul>
+        <a href="#download" class="btn btn-secondary btn-block">Commencer l'essai</a>
       </div>
-      <div class="price-note">Paiement unique — aucun abonnement</div>
-      <ul class="price-features">
-        <li>✓ Toutes les fonctionnalités sans limite</li>
-        <li>✓ Mises à jour gratuites à vie</li>
-        <li>✓ Support WhatsApp en français</li>
-        <li>✓ Sauvegarde cloud incluse</li>
-        <li>✓ Active sur 1 boutique</li>
-      </ul>
-      <a href="https://wa.me/224625437636?text=Bonjour%2C%20je%20souhaite%20acheter%20une%20cl%C3%A9%20DT%20Commerce%20pour%20ma%20boutique." class="btn btn-primary btn-large" onclick="fbq && fbq('track','Lead',{content_name:'whatsapp-purchase'});">
-        💬 Acheter par WhatsApp
-      </a>
-      <p class="price-trial">Tu peux d'abord essayer 7 jours gratuit, sans engagement.</p>
+      <div class="price-card price-lifetime">
+        <span class="price-tag price-tag-hot">Licence à vie</span>
+        <div class="price-headline">
+          <span class="price-big">300<span class="thin">&thinsp;</span>000</span>
+          <span class="price-unit">GNF</span>
+        </div>
+        <p class="price-sub">Paiement unique · aucun abonnement</p>
+        <ul class="price-list">
+          <li>✓ Toutes les fonctionnalités, à vie</li>
+          <li>✓ Mises à jour gratuites — toutes les versions futures</li>
+          <li>✓ Support WhatsApp en français, 7j/7</li>
+          <li>✓ Sauvegarde cloud incluse</li>
+          <li>✓ Active sur 1 boutique, transférable</li>
+        </ul>
+        <a href="https://wa.me/224625437636?text=Bonjour%2C%20je%20souhaite%20acheter%20une%20cl%C3%A9%20DT%20Commerce%20pour%20ma%20boutique." class="btn btn-primary btn-block" onclick="fbq && fbq('track','Lead',{content_name:'whatsapp-purchase'});">
+          Acheter par WhatsApp →
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- ============ DOWNLOAD ============ -->
 <section id="download" class="download">
   <div class="container">
-    <h2 class="section-title">Télécharger DT Commerce</h2>
+    <p class="kicker centered">Téléchargement</p>
+    <h2 class="big-heading centered">Choisis ton appareil.</h2>
     <div class="dl-grid">
       <div class="dl-card">
-        <div class="dl-icon">📱</div>
-        <h3>Android</h3>
-        <p>Pour téléphones Tecno, Itel, Infinix, Samsung… Sideload simple.</p>
-        <a href="https://github.com/Bah-dt/dtcommerce-landing/releases/latest/download/dt-commerce.apk" class="btn btn-primary" onclick="fbq && fbq('track','Download',{content_name:'android-apk'});">Télécharger APK</a>
+        <div class="dl-platform">
+          <span class="dl-icon">📱</span>
+          <div>
+            <h3>Android</h3>
+            <p>Tecno, Itel, Infinix, Samsung, Xiaomi…</p>
+          </div>
+        </div>
+        <a href="https://github.com/Bah-dt/dtcommerce-landing/releases/latest/download/dt-commerce.apk" class="btn btn-primary btn-block" onclick="fbq && fbq('track','Download',{content_name:'android-apk'});">Télécharger APK</a>
         <details class="how-install">
           <summary>Comment installer ?</summary>
           <ol>
             <li>Télécharge le fichier APK</li>
             <li>Ouvre-le depuis ton téléphone</li>
-            <li>Autorise "Sources inconnues" si demandé</li>
+            <li>Autorise « Sources inconnues » si demandé</li>
             <li>Installe et lance l'app</li>
           </ol>
         </details>
       </div>
       <div class="dl-card">
-        <div class="dl-icon">💻</div>
-        <h3>Windows</h3>
-        <p>PC de caisse, pharmacie, supérette. Multi-employés.</p>
-        <a href="https://github.com/Bah-dt/dtcommerce-landing/releases/latest/download/dt-commerce-windows-portable.zip" class="btn btn-primary" onclick="fbq && fbq('track','Download',{content_name:'windows-zip'});">Télécharger Windows</a>
+        <div class="dl-platform">
+          <span class="dl-icon">💻</span>
+          <div>
+            <h3>Windows</h3>
+            <p>PC de caisse, pharmacie, supérette multi-postes</p>
+          </div>
+        </div>
+        <a href="https://github.com/Bah-dt/dtcommerce-landing/releases/latest/download/dt-commerce-windows-portable.zip" class="btn btn-primary btn-block" onclick="fbq && fbq('track','Download',{content_name:'windows-zip'});">Télécharger Windows</a>
         <details class="how-install">
           <summary>Comment installer ?</summary>
           <ol>
             <li>Télécharge le fichier ZIP</li>
-            <li>Extrais le contenu dans un dossier (ex : <code>C:\DT Commerce</code>)</li>
-            <li>Double-clique <code>dt_commerce.exe</code> pour lancer</li>
-            <li>Si Windows SmartScreen avertit : "Informations complémentaires" → "Exécuter quand même"</li>
-            <li>Crée un raccourci bureau en glissant l'exe</li>
+            <li>Extrais dans un dossier (ex&nbsp;: <code>C:\DT Commerce</code>)</li>
+            <li>Double-clique <code>dt_commerce.exe</code></li>
+            <li>Si SmartScreen : « Informations complémentaires » → « Exécuter quand même »</li>
           </ol>
         </details>
       </div>
@@ -179,29 +397,35 @@
   </div>
 </section>
 
+<!-- ============ SUPPORT ============ -->
 <section class="support">
   <div class="container support-inner">
-    <h2>Une question ? On répond.</h2>
-    <p>Support WhatsApp en français, 7j/7.</p>
+    <p class="kicker centered">Support</p>
+    <h2 class="big-heading">Une question ? <span class="display-italic">On répond.</span></h2>
+    <p class="support-lead">WhatsApp en français, 7j/7. Pas de bot, pas de ticket — quelqu'un qui te répond.</p>
     <a href="https://wa.me/224625437636?text=Bonjour%2C%20j%27ai%20besoin%20d%27aide%20avec%20DT%20Commerce." class="btn btn-primary btn-large">
-      💬 Contacter sur WhatsApp
+      💬 &nbsp;Contacter sur WhatsApp
     </a>
   </div>
 </section>
 
+<!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="container footer-inner">
     <div class="footer-brand">
       <strong>DT Commerce</strong>
-      <span>par DT Tech Deals</span>
+      <span>par DT Tech Deals · Conakry, Guinée</span>
     </div>
     <nav class="footer-links">
+      <a href="#fonctionnalites">Fonctionnalités</a>
+      <a href="#tarif">Tarif</a>
+      <a href="#download">Télécharger</a>
       <a href="legal/cgu.html">CGU</a>
       <a href="legal/confidentialite.html">Confidentialité</a>
       <a href="https://wa.me/224625437636">WhatsApp</a>
       <a href="mailto:dttech.guinee@gmail.com">Email</a>
     </nav>
-    <div class="footer-copy">© 2026 DT Tech Deals · Conakry, Guinée</div>
+    <div class="footer-copy">© 2026 DT Tech Deals · Tous droits réservés</div>
   </div>
 </footer>
 
